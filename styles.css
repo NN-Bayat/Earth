@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+:root {
+    --primary-light: #74a84a;
+    --primary-dark: #2c541d;
+    --black: #000000;
+    --white: #efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background: rgba(222, 235, 242, 0.99);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: var(--primary-light);
+    border-top: 2px solid var(--primary-dark);
+}
+
+.rangi{
+    color: var(--primary-dark);
+    border-top: 2px solid var(--primary-dark);
+}
+
+/* -------------header-styles----started------------- */
+
+
+#header {
+    background-image: url(img/main.png);
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+}
+
+.container {
+    padding: 1.5% 15%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    gap: 2.3rem;
+    font-size: medium;
+}
+
+.logo {
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.banner {
+    margin: 15% auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.banner h1 {
+    font-size: 70px;
+    color: var(--primary-dark);
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: -15px;
+}
+
+.banner p {
+    font-size: 33px;
+    letter-spacing: 3px;
+    font-weight: 350;
+    color: var(--black);
+}
+
+.primary-btn {
+    background-color: var(--primary-light);
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-top: 4%;
+    border-radius: 2px;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+    cursor: pointer;
+}
+
+
+/* -------------service-styles----started------------- */
+
+
+#services {
+    padding: 10% 16% 0;
+    display: flex;
+}
+
+.services {
+    padding: 1%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.services h2 {
+    padding: 3%;
+    color: var(--black);
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.services p {
+    color: gray;
+    padding: 0 4% 0 1%;
+}
+
+/* -------------about-styles----started------------- */
+
+#about-us {
+    padding: 9% 16% 6%;
+    display: flex;
+    gap: 20px;
+}
+
+.about-us-text {
+    padding-top: 9%;
+}
+
+.about-us-text h1 {
+    padding: 3%;
+    color: var(--black);
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.about-us-text p {
+    color: gray;
+}
+
+/* -------------footer-styles----started------------- */
+
+
+#footer {
+    background-image: url(img/talk-to-us.png);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 16% 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.footer-content h1 {
+    padding: 3%;
+    color: var(--primary-dark);
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.footer-content p {
+    color: gray;
+    font-size: large;
+}
+
+.footeer-down-part {
+    width: 100%;
+    padding: 1% 16%;
+}
+
+.footerNavbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNavbar ul {
+    display: flex;
+    width: auto;
+    gap: 2.2rem;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1% 0;
+}
+
+.footerNavbar h1 {
+    padding-right: 6%;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.footerNavbar p {
+    padding: 1% 0;
+    font-size: 15px;
+}
+
+/* ------------------------ABOUT PART-----STARTEd------------------------ */
+/* ------------------------ABOUT PART-----STARTEd------------------------ */
+/* ------------------------ABOUT PART-----STARTEd------------------------ */
+
+#about-us-page {
+    padding: 9% 16% 6%;
+}
+
+.mission-text {
+    padding: 6% 0 0;
+    letter-spacing: 1px;
+}
+
+.mission-text h1 {
+    font-weight: 700;
+}
+
+.mission-text p {
+    padding-top: 5%;
+    padding-right: 1%;
+    color: gray;
+}
+
+.mission-content {
+    display: flex;
+    margin: auto;
+    gap: 14%;
+    height: 350px;
+}
+
+/* ------------------------SERVICES PART---STARTED-------------------------- */
+/* ------------------------SERVICES PART---STARTED-------------------------- */
+/* ------------------------SERVICES PART---STARTED-------------------------- */
+
+
+#secvices-page {
+    padding: 6% 16% 3%;
+    display: flex;
+    gap: 8rem;
+}
+
+#secvices-page img {
+    width: 48%;
+}
+
+
+.services-content {
+    padding-top: 4.3%;
+}
+
+.services-content h1 {
+    padding: 3%;
+    color: var(--black);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.services-content p {
+    color: gray;
+    padding: 0 0 8%;
+}
+
+/* ------------------------CONTACT PART---STARTED-------------------------- */
+/* ------------------------CONTACT PART---STARTED-------------------------- */
+/* ------------------------CONTACT PART---STARTED-------------------------- */
+
+#contact {
+    padding: 3% 16%;
+    display: flex;
+    gap: 5rem;
+}
+
+.contact-form h1,
+.address h1 {
+    padding-bottom: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+.contact-form {
+    padding: 3%;
+    width: 50%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+    box-shadow: 0 0 5px rgb(197, 194, 194);
+    height: 33vw;
+    font-size: medium;
+    letter-spacing: normal;
+    font-family: system-ui;
+}
+
+form input {
+    margin-bottom: 10%;
+    height: 3rem;
+    padding-left: 0.6rem;
+    font-size: medium;
+    letter-spacing: normal;
+    font-family: system-ui;
+    border: 1.7px solid var(--primary-light);
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20%;
+    min-height: 20%;
+    padding-left: 0.6rem;
+    font-size: 0.9rem;
+    border: 1.7px solid var(--primary-light);
+}
+
+form .primary-btn {
+    width: 100%;
+    margin-top: 15%;
+    letter-spacing: 5px;
+    font-size: medium;
+}
+
+.address {
+    padding: 3%;
+    width: 50%;
+}
+
+.address img {
+    width: 55px;
+    height: 55px;
+}
+
+.address h4 {
+    font-weight: 550;
+    color: gray;
+}
+
+.address p {
+    font-size: 1.7rem;
+    color: var(--primary-dark);
+}
+
+.email {
+    display: flex;
+    padding-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.phone-no {
+    display: flex;
+    padding-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.location {
+    display: flex;
+    padding-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.social-medie {
+    padding-left: 15%;
+}
+
+.social-medie h3{
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.social-medie-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-medie-icons img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
