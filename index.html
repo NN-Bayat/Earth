@@ -18,9 +18,11 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="rangi">Home</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SEREVICES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+                <li class="close-btn">×</li>
             </ul>
+            <div class="menu-btn"><img src="img/menu.svg" alt=""></div>
         </nav>
         <div class="banner">
             <h1>EARTH</h1>
@@ -34,31 +36,37 @@
                 <div>
                     <img src="img/service-1.png" alt="">
                 </div>
-                <h2>Web Design</h2>
-                <p>
-                    Custom web design for small businesses,
-                    we help you capture new audiences and increase your sales.
-                </p>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>
+                        Custom web design for small businesses,
+                        we help you capture new audiences and increase your sales.
+                    </p>
+                </div>
             </div>
             <div class="services">
                 <div>
                     <img src="img/service-2.png" alt="">
                 </div>
-                <h2>Graphic Design</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem quaerat aspernatur dolores, minima sapiente at.
-                </p>
+                <div>
+                    <h2>Graphic Design</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem quaerat aspernatur dolores, minima sapiente at.
+                    </p>
+                </div>
             </div>
             <div class="services">
                 <div>
                     <img src="img/service-3.png" alt="">
                 </div>
-                <h2>Content Creation</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Impedit iure, minima blanditiis libero maiores labore dolore assumenda?
-                </p>
+                <div>
+                    <h2>Content Creation</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit iure, minima blanditiis libero maiores labore dolore assumenda?
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -102,21 +110,19 @@
         </section>
     </footer>
 
-
-
-
-
-
-    <!-- <div class="menu-btn"><img src="img/menu.svg" alt=""></div> -->
-
-    <!-- <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navLinks = document.querySelector('.nav-links')
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const closeBtn = document.querySelector('.close-btn');
 
         menuBtn.addEventListener('click', function () {
-            navLinks.classList.toggle('active')
-        })
-    </script> -->
+            navLinks.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            navLinks.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>
