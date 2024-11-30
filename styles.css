@@ -31,12 +31,12 @@ ul {
 
 a:hover {
     color: var(--primary-light);
-    border-top: 2px solid var(--primary-dark);
+    border-bottom: 2px solid var(--primary-dark);
 }
 
-.rangi{
+.rangi {
     color: var(--primary-dark);
-    border-top: 2px solid var(--primary-dark);
+    border-bottom: 2px solid var(--primary-dark);
 }
 
 /* -------------header-styles----started------------- */
@@ -56,15 +56,51 @@ a:hover {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
-.navbar ul {
+.menu-btn {
+    display: none;
+    padding-top: 3%;
+}
+
+.nav-links {
     display: flex;
     justify-content: end;
     width: 60%;
     gap: 2.3rem;
     font-size: medium;
+}
+
+.nav-links .close-btn {
+    display: none;
+    font-size: 2rem;
+    color: var(--white);
+    position: absolute;
+    top: -1%;
+    right: 8%;
+    cursor: pointer;
+}
+
+.nav-links.active .close-btn {
+    display: block;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.nav-links li {
+    margin: 10px 0;
 }
 
 .logo {
@@ -390,21 +426,252 @@ form .primary-btn {
 }
 
 .social-medie {
-    padding-left: 15%;
+    padding-left: 17%;
 }
 
-.social-medie h3{
+.social-medie h3 {
     font-weight: 550;
     font-size: x-large;
+    letter-spacing: 1px;
 }
 
-.social-medie-icons{
+.social-medie-icons {
     display: flex;
+    padding-top: 1rem;
     gap: 1rem;
 }
 
-.social-medie-icons img{
+.social-medie-icons img {
     width: 50px;
     height: 50px;
     cursor: pointer;
+}
+
+/* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
+/* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
+    /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid var(--black);
+        padding: 1rem;
+    }
+
+    .nav-links a {
+        color: var(--white);
+        padding: 5% 0 10%;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-light);
+        border-bottom: none;
+    }
+
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* ------------------------ */
+
+    #header {
+        height: 70vh;
+    }
+
+    .container {
+        padding: 1.5% 7%;
+    }
+
+    .banner {
+        margin: 32% auto 0;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 45px;
+        margin-bottom: 18px;
+        font-weight: 600;
+        letter-spacing: 11px;
+        border-bottom: 2px solid var(--primary-dark);
+    }
+
+    .banner p {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .banner .primary-btn {
+        background-color: transparent;
+        color: var(--black);
+        height: 50px;
+        width: 180px;
+        border: 1px solid var(--primary-dark);
+        letter-spacing: 2px;
+        border-top-left-radius: 80%;
+        border-bottom-right-radius: 100%;
+    }
+
+    .banner .primary-btn:hover {
+        background-color: var(--primary-light);
+        cursor: pointer;
+        border: none;
+    }
+
+    /* -------------------------- */
+
+    #services {
+        padding: 10% 3.5% 0;
+        display: block;
+    }
+
+    .services {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .services img {
+        width: 100%;
+    }
+
+    .services h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .services p {
+        color: gray;
+        padding: 0 3% 4%;
+        display: flex;
+        text-align: center;
+    }
+
+    /* ------------------------------ */
+
+    #about-us {
+        padding: 10% 0 1%;
+        display: block;
+        gap: 20px;
+    }
+
+    #about-us img {
+        width: 100%;
+    }
+
+    .about-us-text {
+        padding-top: 5%;
+    }
+
+    .about-us-text h1 {
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+    }
+
+    .about-us-text p {
+        color: gray;
+        text-align: center;
+        padding: 0 3% 4%;
+    }
+
+
+
+    /* ------------------------------------ */
+
+    #footer {
+        height: 70vh;
+    }
+
+    .footer-content {
+        padding: 10% 8% 0;
+        width: 100%;
+    }
+
+    .footer-content h1 {
+        padding: 50% 0 1%;
+        font-size: 30px;
+        letter-spacing: 2.5px;
+    }
+
+    .footer-content p {
+        color: gray;
+        font-size: large;
+        text-align: center;
+        padding: 0 0 10%;
+    }
+
+    .footeer-down-part {
+        padding: 1% 6%;
+    }
+
+    .footerNavbar ul {
+        display: none;
+    }
+
+    .footerNavbar h1 {
+        letter-spacing: 1px;
+        font-size: medium;
+        font-weight: 600;
+        padding: 1% 0;
+    }
+
+    .footerNavbar p {
+        padding: 1% 0;
+        font-size: 15px;
+    }
+
+    /* -------480px--------ABOUT-page-------480px-------- */
+    /* -------480px--------ABOUT-page-------480px-------- */
+
+    #about-us-page {
+        padding: 10% 0;
+    }
+
+    .mission-text h1 {
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission-text p {
+        padding:0 6% 3%;
+        color: gray;
+        text-align: center;
+    }
+
+    .mission-content {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+    }
+
+    /* -------480px--------SERVICES-page-------480px-------- */
+    /* -------480px--------SERVICES-page-------480px-------- */
+
+
+    /* -------480px--------CONTACT-page-------480px-------- */
+    /* -------480px--------CONTACT-page-------480px-------- */
+
+
+
 }
