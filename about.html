@@ -18,9 +18,11 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="rangi">ABOUT</a></li>
-                <li><a href="services.html">SEREVICES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+                <li class="close-btn">×</li>
             </ul>
+            <div class="menu-btn"><img src="img/menu.svg" alt=""></div>
         </nav>
         <div class="banner">
             <h1>EARTH</h1>
@@ -74,16 +76,19 @@
         </section>
     </footer>
 
-    <!-- <div class="menu-btn"><img src="img/menu.svg" alt=""></div> -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const closeBtn = document.querySelector('.close-btn');
 
-    <!-- <script>
-    const menuBtn = document.querySelector('.menu-btn')
-    const navLinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
 
-    menuBtn.addEventListener('click', function () {
-        navLinks.classList.toggle('active')
-    })
-</script> -->
+        closeBtn.addEventListener('click', function () {
+            navLinks.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>
