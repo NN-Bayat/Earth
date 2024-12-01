@@ -371,12 +371,14 @@ form input {
 }
 
 textarea {
+    font-family: system-ui;
+    letter-spacing: normal;
     max-width: 100%;
     min-width: 100%;
     max-height: 20%;
     min-height: 20%;
     padding-left: 0.6rem;
-    font-size: 0.9rem;
+    font-size: medium;
     border: 1.7px solid var(--primary-light);
 }
 
@@ -407,18 +409,8 @@ form .primary-btn {
     color: var(--primary-dark);
 }
 
-.email {
-    display: flex;
-    padding-bottom: 2.5rem;
-    gap: 1rem;
-}
-
-.phone-no {
-    display: flex;
-    padding-bottom: 2.5rem;
-    gap: 1rem;
-}
-
+.email,
+.phone-no,
 .location {
     display: flex;
     padding-bottom: 2.5rem;
@@ -450,7 +442,7 @@ form .primary-btn {
 /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
 /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
     /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
     /* ------------------------------STYLES-FOR-RESPONSIVE-------------------------- */
@@ -467,8 +459,7 @@ form .primary-btn {
     }
 
     .nav-links li {
-        border-bottom: 1px solid var(--black);
-        padding: 1rem;
+        padding: 1.5%;
     }
 
     .nav-links a {
@@ -490,6 +481,10 @@ form .primary-btn {
     .menu-btn img {
         width: 30px;
         height: 30px;
+    }
+
+    .rangi {
+        color: var(--primary-dark);
     }
 
     /* ------------------------ */
@@ -654,7 +649,7 @@ form .primary-btn {
     }
 
     .mission-text p {
-        padding:0 6% 3%;
+        padding: 0 6% 3%;
         color: gray;
         text-align: center;
     }
@@ -668,10 +663,114 @@ form .primary-btn {
     /* -------480px--------SERVICES-page-------480px-------- */
     /* -------480px--------SERVICES-page-------480px-------- */
 
+    #secvices-page {
+        padding: 3% 0 10%;
+        display: block;
+        text-align: center;
+    }
+
+    #secvices-page img {
+        width: 100%;
+    }
+
+    .services-content {
+        padding: 5%;
+    }
+
+    .services-content h1 {
+        padding: 10% 0 1%;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-karbalaye {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
     /* -------480px--------CONTACT-page-------480px-------- */
     /* -------480px--------CONTACT-page-------480px-------- */
 
+    #contact {
+        padding: 3% 1% 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
 
+    .contact-form h1,
+    .address h1 {
+        padding: 6% 0 0.5rem;
+        letter-spacing: normal;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form form {
+        display: flex;
+        padding: 7% 6%;
+        box-shadow: 0 0 5px rgb(141, 139, 139);
+        height: 100%;
+    }
+
+    form input {
+        margin-bottom: 7%;
+        height: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    textarea {
+        padding-top: 0.3rem;
+        max-height: 10rem;
+        min-height: 5rem;
+        height: 5rem;
+        font-size: medium;
+    }
+
+    form .primary-btn {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    .address {
+        padding: 0 3% 1%;
+        width: 100%;
+    }
+
+    .address h4 {
+        font-size: larger;
+    }
+
+    .address p {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .email,
+    .phone-no,
+    .location {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .social-medie {
+        text-align: center;
+        padding: 0;
+    }
+
+    .social-medie-icons {
+        display: flex;
+        padding: 1rem 2rem 1rem;
+        justify-content: space-between;
+    }
 
 }
