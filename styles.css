@@ -464,7 +464,7 @@ form .primary-btn {
 
     .nav-links a {
         color: var(--white);
-        padding: 5% 0 10%;
+        padding: 5% 0 0;
     }
 
     .nav-links a:hover {
